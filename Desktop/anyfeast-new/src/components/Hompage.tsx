@@ -5,7 +5,8 @@ import BirthdaySelect from "./onboarding/BirthdaySelect";
 import Measurements  from "./onboarding/Measurements";
 import TargetWeight from "./onboarding/TargetWeight";
 import GoalSelect from "./onboarding/Goal Select";
-import AllergyPreference from "./AllergyPrefer";
+import AllergyPreference from "./onboarding/AllergyPrefer";
+import Preferences  from "./onboarding/Preferences";
 
 const Homepage = () => {
   const [step, setStep] = useState(1);
@@ -36,6 +37,7 @@ const Homepage = () => {
            {step === 4 && <Measurements onContinue={() => setStep(5)} />}
         {step === 5 && <GoalSelect  onContinue={()  => setStep(6)} />}
           {step===6 && <AllergyPreference onContinue={()=>setStep(7)}/>}
+              {step===7 && <Preferences />}
       </div>
 
     </main>

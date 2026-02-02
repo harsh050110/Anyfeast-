@@ -180,7 +180,7 @@ const AllergyPreference = ({ onContinue }: Props) => {
           Continue
         </button>
       </div>
-  );
+    );
 };
 
 export default AllergyPreference;
